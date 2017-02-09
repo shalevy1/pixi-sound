@@ -13,12 +13,12 @@ for (const name in manifest) {
     PIXI.loader.add(name, manifest[name]);
 }
 
-const distortion = new PIXI.sound.filters.DistortionFilter();
+const distort = new PIXI.sound.filters.DistortionFilter();
 const stereo = new PIXI.sound.filters.StereoFilter();
 const equalizer = new PIXI.sound.filters.EqualizerFilter();
 
 PIXI.loader.load(function(loader, resources) {
-    const block = $("#block");
+    const singleInstance = $("#singleInstance");
     const loop = $("#loop");
     const speed = $("#speed");
     const volume = $('#volume');
@@ -26,14 +26,14 @@ PIXI.loader.load(function(loader, resources) {
         const progressBar = $(`#progress-${button.dataset.id}`);
         button.addEventListener('click', function() {
             const sound = resources[this.dataset.id].sound;
-            sound.filters = [stereo, equalizer, distortion];
-            sound.block = block.checked;
+            sound.filters = [stereo, equalizer, distort];
+            sound.singleInstance = singleInstance.checked;
             sound.volume = parseFloat(volume.value);
             sound.loop = !!this.dataset.loop;
             sound.speed = parseFloat(speed.value);
             const instance = sound.play();
             instance.on('progress', (value) => {
-                progressBar.style = `width:${value * 100}%`;
+                progressBar.style.width = `${value * 100}%`;
             });
             instance.on('end', () => {
                 progressBar.style = '';
@@ -53,11 +53,11 @@ $('#panning').addEventListener('input', function() {
 });
 
 $('#distortion').addEventListener('input', function() {
-    distortion.amount = parseFloat(this.value);
+    distort.amount = parseFloat(this.value);
 });
 
 $('#globalVolume').addEventListener('input', function() {
-    PIXI.sound.context.volume = Math.max(0, 
+    PIXI.sound.volumeAll = Math.max(0, 
         Math.min(1, parseFloat(this.value))
     );
 });

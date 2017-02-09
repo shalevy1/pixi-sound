@@ -16,25 +16,29 @@
         <div class="container-fluid">
             <h1>PIXI.sound App</h1>
             <nav class="navbar navbar-inverse">
-                <ul class="nav navbar-nav">
-                    <li><a href="https://github.com/pixijs/pixi-sound">Github</a></li>
-                    <li><a href="index.html">Examples</a></li>
-                    <li class="active"><a href="app.html">App</a></li>
-                    <li><a href="../docs/index.html">API Docs</a></li>
-                </ul>
+                <div class="container-fluid">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Examples</a></li>
+                        <li class="active"><a href="app.html">App</a></li>
+                        <li><a href="../docs/index.html">API Docs</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="https://github.com/pixijs/pixi-sound">Github</a></li>
+                    </ul>
+                </div>
             </nav>
             <ul class="sound-list list-group">
                 <li class="list-group-item">
                     <div class="row">
-                        <div class="col-xs-3">
+                        <div class="col-sm-3 col-xs-4">
                             <strong>applause</strong>
                         </div>
-                        <div class="col-xs-6">
+                        <div class="col-sm-6 col-xs-4">
                             <div class="progress">
                                 <div class="progress-bar" id="progress-applause"></div>
                             </div>
                         </div>
-                        <div class="col-xs-3">
+                        <div class="col-sm-3 col-xs-4">
                             <div class="btn-group btn-group-justified">
                                 <div class="btn-group">
                                     <button class="btn btn-default play" data-id="applause">
@@ -52,15 +56,15 @@
                 </li>
                 <li class="list-group-item">
                     <div class="row">
-                        <div class="col-xs-3">
+                        <div class="col-sm-3 col-xs-4">
                             <strong>bird</strong>
                         </div>
-                        <div class="col-xs-6">
+                        <div class="col-sm-6 col-xs-4">
                             <div class="progress">
                                 <div class="progress-bar" id="progress-bird"></div>
                             </div>
                         </div>
-                        <div class="col-xs-3">
+                        <div class="col-sm-3 col-xs-4">
                             <div class="btn-group btn-group-justified">
                                 <div class="btn-group">
                                     <button class="btn btn-default play" data-id="bird">
@@ -78,15 +82,15 @@
                 </li>
                 <li class="list-group-item">
                     <div class="row">
-                        <div class="col-xs-3">
+                        <div class="col-sm-3 col-xs-4">
                             <strong>boing</strong>
                         </div>
-                        <div class="col-xs-6">
+                        <div class="col-sm-6 col-xs-4">
                             <div class="progress">
                                 <div class="progress-bar" id="progress-boing"></div>
                             </div>
                         </div>
-                        <div class="col-xs-3">
+                        <div class="col-sm-3 col-xs-4">
                             <div class="btn-group btn-group-justified">
                                 <div class="btn-group">
                                     <button class="btn btn-default play" data-id="boing">
@@ -104,15 +108,15 @@
                 </li>
                 <li class="list-group-item">
                     <div class="row">
-                        <div class="col-xs-3">
+                        <div class="col-sm-3 col-xs-4">
                             <strong>mechanical</strong>
                         </div>
-                        <div class="col-xs-6">
+                        <div class="col-sm-6 col-xs-4">
                             <div class="progress">
                                 <div class="progress-bar" id="progress-mechanical"></div>
                             </div>
                         </div>
-                        <div class="col-xs-3">
+                        <div class="col-sm-3 col-xs-4">
                             <div class="btn-group btn-group-justified">
                                 <div class="btn-group">
                                     <button class="btn btn-default play" data-id="mechanical">
@@ -130,15 +134,15 @@
                 </li>
                 <li class="list-group-item">
                     <div class="row">
-                        <div class="col-xs-3">
+                        <div class="col-sm-3 col-xs-4">
                             <strong>whistle</strong>
                         </div>
-                        <div class="col-xs-6">
+                        <div class="col-sm-6 col-xs-4">
                             <div class="progress">
                                 <div class="progress-bar" id="progress-whistle"></div>
                             </div>
                         </div>
-                        <div class="col-xs-3">
+                        <div class="col-sm-3 col-xs-4">
                             <div class="btn-group btn-group-justified">
                                 <div class="btn-group">
                                     <button class="btn btn-default play" data-id="whistle">
@@ -173,7 +177,7 @@
             <div class="well">
                 <h3>Global Volume</h3>
                 <input id="globalVolume" type="range" class="range" step="0.01" value="1" min="0" max="1" />
-                <pre><code class="javascript code-block">PIXI.sound.context.volume = 0.5;</code></pre>
+                <pre><code class="javascript code-block">PIXI.sound.volumeAll = 0.5;</code></pre>
             </div>
             <div class="well">
                 <h3>Global StereoFilter</h3>
@@ -223,15 +227,15 @@ PIXI.sound.find('bird').filters = [eq];</code></pre>
                         <pre><code class="javascript code-block">PIXI.sound.find('bird').speed = 0.5;</code></pre>
                     </div>
                     <div class="col-xs-4">
-                        <h4>Block</h4>
+                        <h4>Single Instance</h4>
                     </div>
                     <div class="col-xs-8">
                         <div class="checkbox">
                             <label>
-                                <input id="block" type="checkbox" checked /> Block Layered Sounds
+                                <input id="singleInstance" type="checkbox" checked /> Only allow single instances to play
                             </label>
                         </div>
-                        <pre><code class="javascript code-block">PIXI.sound.find('bird').block = true;</code></pre>
+                        <pre><code class="javascript code-block">PIXI.sound.find('bird').singleInstance = true;</code></pre>
                     </div>
                 </div>
             </div>
