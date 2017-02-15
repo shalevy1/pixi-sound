@@ -86,6 +86,8 @@
             
                 <li data-name="PIXI.sound#add"><a href="PIXI.sound.html#add">add</a></li>
             
+                <li data-name="PIXI.sound#add"><a href="PIXI.sound.html#add">add</a></li>
+            
                 <li data-name="PIXI.sound#addMap"><a href="PIXI.sound.html#addMap">addMap</a></li>
             
                 <li data-name="PIXI.sound#duration"><a href="PIXI.sound.html#duration">duration</a></li>
@@ -101,6 +103,8 @@
                 <li data-name="PIXI.sound#pause"><a href="PIXI.sound.html#pause">pause</a></li>
             
                 <li data-name="PIXI.sound#pauseAll"><a href="PIXI.sound.html#pauseAll">pauseAll</a></li>
+            
+                <li data-name="PIXI.sound#play"><a href="PIXI.sound.html#play">play</a></li>
             
                 <li data-name="PIXI.sound#play"><a href="PIXI.sound.html#play">play</a></li>
             
@@ -167,6 +171,8 @@
             <span class="subtitle">Methods</span>
             
                 <li data-name="PIXI.sound.utils.playOnce"><a href="PIXI.sound.utils.html#.playOnce">playOnce</a></li>
+            
+                <li data-name="PIXI.sound.utils.render"><a href="PIXI.sound.utils.html#.render">render</a></li>
             
                 <li data-name="PIXI.sound.utils.sineTone"><a href="PIXI.sound.utils.html#.sineTone">sineTone</a></li>
             
@@ -364,6 +370,8 @@
             
                 <li data-name="PIXI.sound.Sound#speed"><a href="PIXI.sound.Sound.html#speed">speed</a></li>
             
+                <li data-name="PIXI.sound.Sound#sprites"><a href="PIXI.sound.Sound.html#sprites">sprites</a></li>
+            
                 <li data-name="PIXI.sound.Sound#src"><a href="PIXI.sound.Sound.html#src">src</a></li>
             
                 <li data-name="PIXI.sound.Sound#srcBuffer"><a href="PIXI.sound.Sound.html#srcBuffer">srcBuffer</a></li>
@@ -388,9 +396,19 @@
             
                 <li data-name="PIXI.sound.Sound.from"><a href="PIXI.sound.Sound.html#.from">from</a></li>
             
+                <li data-name="PIXI.sound.Sound#addSprites"><a href="PIXI.sound.Sound.html#addSprites">addSprites</a></li>
+            
+                <li data-name="PIXI.sound.Sound#addSprites"><a href="PIXI.sound.Sound.html#addSprites">addSprites</a></li>
+            
                 <li data-name="PIXI.sound.Sound#pause"><a href="PIXI.sound.Sound.html#pause">pause</a></li>
             
                 <li data-name="PIXI.sound.Sound#play"><a href="PIXI.sound.Sound.html#play">play</a></li>
+            
+                <li data-name="PIXI.sound.Sound#play"><a href="PIXI.sound.Sound.html#play">play</a></li>
+            
+                <li data-name="PIXI.sound.Sound#removeSprites"><a href="PIXI.sound.Sound.html#removeSprites">removeSprites</a></li>
+            
+                <li data-name="PIXI.sound.Sound#removeSprites"><a href="PIXI.sound.Sound.html#removeSprites">removeSprites</a></li>
             
                 <li data-name="PIXI.sound.Sound#resume"><a href="PIXI.sound.Sound.html#resume">resume</a></li>
             
@@ -496,6 +514,43 @@
             </ul>
         </li>
     
+        <li class="item" data-name="PIXI.sound.SoundSprite">
+            <span class="title">
+                <a href="PIXI.sound.SoundSprite.html">PIXI.sound.SoundSprite</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            <span class="subtitle">Members</span>
+            
+                <li data-name="PIXI.sound.SoundSprite#duration"><a href="PIXI.sound.SoundSprite.html#duration">duration</a></li>
+            
+                <li data-name="PIXI.sound.SoundSprite#end"><a href="PIXI.sound.SoundSprite.html#end">end</a></li>
+            
+                <li data-name="PIXI.sound.SoundSprite#parent"><a href="PIXI.sound.SoundSprite.html#parent">parent</a></li>
+            
+                <li data-name="PIXI.sound.SoundSprite#speed"><a href="PIXI.sound.SoundSprite.html#speed">speed</a></li>
+            
+                <li data-name="PIXI.sound.SoundSprite#start"><a href="PIXI.sound.SoundSprite.html#start">start</a></li>
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="PIXI.sound.SoundSprite#destroy"><a href="PIXI.sound.SoundSprite.html#destroy">destroy</a></li>
+            
+                <li data-name="PIXI.sound.SoundSprite#play"><a href="PIXI.sound.SoundSprite.html#play">play</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
     </ul>
 </div>
     <div class="main">
@@ -571,6 +626,9 @@
             <dd></dd>
         
             <dt><a href="PIXI.sound.SoundInstance.html">SoundInstance</a></dt>
+            <dd></dd>
+        
+            <dt><a href="PIXI.sound.SoundSprite.html">SoundSprite</a></dt>
             <dd></dd>
         </dl>
     
@@ -807,7 +865,7 @@
     
     
     <div class="description">
-        <p>Adds a new sound by alias.</p>
+        <p>Register an existing sound with the library cache.</p>
     </div>
     
 
@@ -943,6 +1001,180 @@
                     
             </td>
             <td class="description last">Instance of the Sound object.</td>
+        </tr>
+    
+    </tbody>
+</table>
+
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="add">
+            
+            add<span class="signature">(map, globalOptions)</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{<a href="PIXI.sound.Sound.html">PIXI.sound.Sound</a>}</span>
+        </h4>
+    
+        
+        <div class="tag-source">
+            SoundLibrary.js, line 67
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        <p>Adds multiple sounds at once.</p>
+    </div>
+    
+
+    
+    
+    
+    
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>map</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                <p>Map of sounds to add, the key is the alias, the value is the<br>       string, ArrayBuffer or the list of options (see <code>add</code> method for options).</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>globalOptions</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+|
+
+<span class="param-type">String</span>
+|
+
+<span class="param-type">ArrayBuffer</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                <p>The default options for all sounds.<br>       if a property is defined, it will use the local property instead.</p></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Type</th>
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+        <tr>
+            
+            <td class="type">
+            
+                        <a href="PIXI.sound.Sound.html">PIXI.sound.Sound</a>
+                        
+                    
+            </td>
+            <td class="description last">Instance to the Sound object.</td>
         </tr>
     
     </tbody>
@@ -1257,6 +1489,42 @@
 	
         <tr>
             
+                <td class="name"><code>speed</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                    1
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional">optional</span>
+                    
+                    
+                        
+                    
+                
+                <p>The playback rate where 1 is 100% speed.</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
                 <td class="name"><code>useXHR</code></td>
             
             
@@ -1286,7 +1554,41 @@
                         
                     
                 
-                <p>true to use XMLHttpRequest to load the sound. Default is false, loaded with NodeJS's <code>fs</code> module.</p></td>
+                <p>true to use XMLHttpRequest to load the sound. Default is false,<br>       loaded with NodeJS's <code>fs</code> module.</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>sprites</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional">optional</span>
+                    
+                    
+                        
+                    
+                
+                <p>The map of sprite data. Where a sprite is an object<br>       with a <code>start</code> and <code>end</code>, which are the times in seconds. Optionally, can include<br>       a <code>speed</code> amount where 1 is 100% speed.</p></td>
         </tr>
 	
 	
@@ -1322,7 +1624,7 @@
                         
                     
                 
-                <p>Global complete callback when play is finished.</p></td>
+                <p>Global complete callback when<br>       play is finished.</p></td>
         </tr>
 	
 	
@@ -1446,12 +1748,12 @@
     <div class="nameContainer">
         <h4 class="name" id="addMap">
             
-            addMap<span class="signature">(map, globalOptions)</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{<a href="PIXI.sound.Sound.html">PIXI.sound.Sound</a>}</span>
+            addMap<span class="signature">()</span>
         </h4>
     
         
         <div class="tag-source">
-            SoundLibrary.js, line 61
+            deprecations.js, line 15
         </div>
         
     </div>
@@ -1462,7 +1764,7 @@
     
     
     <div class="description">
-        <p>Adds multiple sounds.</p>
+        <p>Add a map of sounds.</p>
     </div>
     
 
@@ -1470,80 +1772,6 @@
     
     
     
-    
-        
-
-<table class="params">
-    <thead>
-	<tr>
-		
-		<th>Name</th>
-		
-		
-		<th>Type</th>
-		
-		
-		
-		<th class="last">Description</th>
-	</tr>
-	</thead>
-	
-	<tbody>
-	
-	
-        <tr>
-            
-                <td class="name"><code>map</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">Object</span>
-
-
-            
-            </td>
-            
-            
-            
-            <td class="description last">
-                
-                <p>Map of sounds to add, the key is the alias, the value is the<br>       string, ArrayBuffer or the list of options (see <code>add</code> method for options).</p></td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>globalOptions</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">Object</span>
-|
-
-<span class="param-type">String</span>
-|
-
-<span class="param-type">ArrayBuffer</span>
-
-
-            
-            </td>
-            
-            
-            
-            <td class="description last">
-                
-                <p>The default options for all sounds.<br>       if a property is defined, it will use the local property instead.</p></td>
-        </tr>
-	
-	
-	</tbody>
-</table>
     
     
     
@@ -1555,6 +1783,7 @@
     
 
     
+        <dt class="important tag-deprecated">Deprecated</dt><dd><ul class="dummy"><li>since 1.3.0</li><ul></dd>
     
     
     
@@ -1566,6 +1795,14 @@
     
     
     
+    
+    
+    <dt class="tag-see">See:</dt>
+    <dd class="tag-see">
+        <ul>
+            <li><a href="PIXI.sound.html#add">PIXI.sound#add</a></li>
+        </ul>
+    </dd>
     
     
     
@@ -1580,35 +1817,6 @@
     
     
     
-    
-    <h5>Returns:</h5>
-    
-
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Type</th>
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-    <tbody>
-    
-        <tr>
-            
-            <td class="type">
-            
-                        <a href="PIXI.sound.Sound.html">PIXI.sound.Sound</a>
-                        
-                    
-            </td>
-            <td class="description last">Instance to the Sound object.</td>
-        </tr>
-    
-    </tbody>
-</table>
-
     
     
     
@@ -1625,7 +1833,7 @@
     
         
         <div class="tag-source">
-            SoundLibrary.js, line 178
+            SoundLibrary.js, line 202
         </div>
         
     </div>
@@ -1770,7 +1978,7 @@
     
         
         <div class="tag-source">
-            SoundLibrary.js, line 120
+            SoundLibrary.js, line 135
         </div>
         
     </div>
@@ -1915,7 +2123,7 @@
     
         
         <div class="tag-source">
-            SoundLibrary.js, line 127
+            SoundLibrary.js, line 142
         </div>
         
     </div>
@@ -2060,7 +2268,7 @@
     
         
         <div class="tag-source">
-            SoundLibrary.js, line 96
+            SoundLibrary.js, line 111
         </div>
         
     </div>
@@ -2240,7 +2448,7 @@
     
         
         <div class="tag-source">
-            SoundLibrary.js, line 156
+            SoundLibrary.js, line 180
         </div>
         
     </div>
@@ -2385,7 +2593,7 @@
     
         
         <div class="tag-source">
-            SoundLibrary.js, line 84
+            SoundLibrary.js, line 99
         </div>
         
     </div>
@@ -2485,7 +2693,7 @@
     
         
         <div class="tag-source">
-            SoundLibrary.js, line 134
+            SoundLibrary.js, line 158
         </div>
         
     </div>
@@ -2882,6 +3090,177 @@
             
 <dt>
     <div class="nameContainer">
+        <h4 class="name" id="play">
+            
+            play<span class="signature">(alias, sprite)</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{<a href="PIXI.sound.SoundInstance.html">PIXI.sound.SoundInstance</a>|null}</span>
+        </h4>
+    
+        
+        <div class="tag-source">
+            SoundLibrary.js, line 149
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        <p>Plays a sound.</p>
+    </div>
+    
+
+    
+    
+    
+    
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>alias</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                <p>The sound alias reference.</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>sprite</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                <p>The alias of the sprite to play.</p></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Type</th>
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+        <tr>
+            
+            <td class="type">
+            
+                        <a href="PIXI.sound.SoundInstance.html">PIXI.sound.SoundInstance</a>
+                         | 
+                    
+                        null
+                        
+                    
+            </td>
+            <td class="description last">The sound instance, this cannot be reused<br>        after it is done playing. Returns <code>null</code> if the sound has not yet loaded.</td>
+        </tr>
+    
+    </tbody>
+</table>
+
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
         <h4 class="name" id="remove">
             
             remove<span class="signature">(alias)</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{<a href="PIXI.sound.html">PIXI.sound</a>}</span>
@@ -2889,7 +3268,7 @@
     
         
         <div class="tag-source">
-            SoundLibrary.js, line 71
+            SoundLibrary.js, line 86
         </div>
         
     </div>
@@ -3034,7 +3413,7 @@
     
         
         <div class="tag-source">
-            SoundLibrary.js, line 108
+            SoundLibrary.js, line 123
         </div>
         
     </div>
@@ -3134,7 +3513,7 @@
     
         
         <div class="tag-source">
-            SoundLibrary.js, line 163
+            SoundLibrary.js, line 187
         </div>
         
     </div>
@@ -3279,7 +3658,7 @@
     
         
         <div class="tag-source">
-            SoundLibrary.js, line 90
+            SoundLibrary.js, line 105
         </div>
         
     </div>
@@ -3459,7 +3838,7 @@
     
         
         <div class="tag-source">
-            SoundLibrary.js, line 149
+            SoundLibrary.js, line 173
         </div>
         
     </div>
@@ -3604,7 +3983,7 @@
     
         
         <div class="tag-source">
-            SoundLibrary.js, line 114
+            SoundLibrary.js, line 129
         </div>
         
     </div>
@@ -3704,7 +4083,7 @@
     
         
         <div class="tag-source">
-            SoundLibrary.js, line 102
+            SoundLibrary.js, line 117
         </div>
         
     </div>
@@ -3804,7 +4183,7 @@
     
         
         <div class="tag-source">
-            SoundLibrary.js, line 170
+            SoundLibrary.js, line 194
         </div>
         
     </div>
@@ -3990,7 +4369,7 @@
         
 
         <footer>
-            Documentation generated by <a target="_blank" href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.3</a> on Mon Feb 13 2017 14:10:17 GMT-0500 (EST)
+            Documentation generated by <a target="_blank" href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.3</a> on Wed Feb 15 2017 17:43:13 GMT-0500 (EST)
         </footer>
     </div>
 </div>
