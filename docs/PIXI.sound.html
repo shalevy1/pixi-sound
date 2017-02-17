@@ -455,6 +455,8 @@
             
                 <li data-name="PIXI.sound.SoundContext#destroy"><a href="PIXI.sound.SoundContext.html#destroy">destroy</a></li>
             
+                <li data-name="PIXI.sound.SoundContext#playEmptySound"><a href="PIXI.sound.SoundContext.html#playEmptySound">playEmptySound</a></li>
+            
                 <li data-name="PIXI.sound.SoundContext#toggleMute"><a href="PIXI.sound.SoundContext.html#toggleMute">toggleMute</a></li>
             
             </ul>
@@ -844,348 +846,6 @@
         <h3 class="subsection-title">Methods</h3>
         
         <dl>
-            
-<dt>
-    <div class="nameContainer">
-        <h4 class="name" id="add">
-            
-            add<span class="signature">(alias, sound)</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{<a href="PIXI.sound.Sound.html">PIXI.sound.Sound</a>}</span>
-        </h4>
-    
-        
-        <div class="tag-source">
-            SoundLibrary.js, line 36
-        </div>
-        
-    </div>
-
-    
-</dt>
-<dd>
-    
-    
-    <div class="description">
-        <p>Register an existing sound with the library cache.</p>
-    </div>
-    
-
-    
-    
-    
-    
-    
-        
-
-<table class="params">
-    <thead>
-	<tr>
-		
-		<th>Name</th>
-		
-		
-		<th>Type</th>
-		
-		
-		
-		<th class="last">Description</th>
-	</tr>
-	</thead>
-	
-	<tbody>
-	
-	
-        <tr>
-            
-                <td class="name"><code>alias</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">String</span>
-
-
-            
-            </td>
-            
-            
-            
-            <td class="description last">
-                
-                <p>The sound alias reference.</p></td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>sound</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type"><a href="PIXI.sound.Sound.html">PIXI.sound.Sound</a></span>
-
-
-            
-            </td>
-            
-            
-            
-            <td class="description last">
-                
-                <p>Sound reference to use.</p></td>
-        </tr>
-	
-	
-	</tbody>
-</table>
-    
-    
-    
-<dl class="details">
-    
-        
-    
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-</dl>
-
-    
-    
-
-    
-
-    
-    
-    
-    
-    
-    <h5>Returns:</h5>
-    
-
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Type</th>
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-    <tbody>
-    
-        <tr>
-            
-            <td class="type">
-            
-                        <a href="PIXI.sound.Sound.html">PIXI.sound.Sound</a>
-                        
-                    
-            </td>
-            <td class="description last">Instance of the Sound object.</td>
-        </tr>
-    
-    </tbody>
-</table>
-
-    
-    
-    
-</dd>
-
-        
-            
-<dt>
-    <div class="nameContainer">
-        <h4 class="name" id="add">
-            
-            add<span class="signature">(map, globalOptions)</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{<a href="PIXI.sound.Sound.html">PIXI.sound.Sound</a>}</span>
-        </h4>
-    
-        
-        <div class="tag-source">
-            SoundLibrary.js, line 67
-        </div>
-        
-    </div>
-
-    
-</dt>
-<dd>
-    
-    
-    <div class="description">
-        <p>Adds multiple sounds at once.</p>
-    </div>
-    
-
-    
-    
-    
-    
-    
-        
-
-<table class="params">
-    <thead>
-	<tr>
-		
-		<th>Name</th>
-		
-		
-		<th>Type</th>
-		
-		
-		
-		<th class="last">Description</th>
-	</tr>
-	</thead>
-	
-	<tbody>
-	
-	
-        <tr>
-            
-                <td class="name"><code>map</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">Object</span>
-
-
-            
-            </td>
-            
-            
-            
-            <td class="description last">
-                
-                <p>Map of sounds to add, the key is the alias, the value is the<br>       string, ArrayBuffer or the list of options (see <code>add</code> method for options).</p></td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>globalOptions</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">Object</span>
-|
-
-<span class="param-type">String</span>
-|
-
-<span class="param-type">ArrayBuffer</span>
-
-
-            
-            </td>
-            
-            
-            
-            <td class="description last">
-                
-                <p>The default options for all sounds.<br>       if a property is defined, it will use the local property instead.</p></td>
-        </tr>
-	
-	
-	</tbody>
-</table>
-    
-    
-    
-<dl class="details">
-    
-        
-    
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-</dl>
-
-    
-    
-
-    
-
-    
-    
-    
-    
-    
-    <h5>Returns:</h5>
-    
-
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Type</th>
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-    <tbody>
-    
-        <tr>
-            
-            <td class="type">
-            
-                        <a href="PIXI.sound.Sound.html">PIXI.sound.Sound</a>
-                        
-                    
-            </td>
-            <td class="description last">Instance to the Sound object.</td>
-        </tr>
-    
-    </tbody>
-</table>
-
-    
-    
-    
-</dd>
-
-        
             
 <dt>
     <div class="nameContainer">
@@ -1667,6 +1327,348 @@
 	</tbody>
 </table>
             </td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Type</th>
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+        <tr>
+            
+            <td class="type">
+            
+                        <a href="PIXI.sound.Sound.html">PIXI.sound.Sound</a>
+                        
+                    
+            </td>
+            <td class="description last">Instance of the Sound object.</td>
+        </tr>
+    
+    </tbody>
+</table>
+
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="add">
+            
+            add<span class="signature">(map, globalOptions)</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{<a href="PIXI.sound.Sound.html">PIXI.sound.Sound</a>}</span>
+        </h4>
+    
+        
+        <div class="tag-source">
+            SoundLibrary.js, line 67
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        <p>Adds multiple sounds at once.</p>
+    </div>
+    
+
+    
+    
+    
+    
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>map</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                <p>Map of sounds to add, the key is the alias, the value is the<br>       string, ArrayBuffer or the list of options (see <code>add</code> method for options).</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>globalOptions</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+|
+
+<span class="param-type">String</span>
+|
+
+<span class="param-type">ArrayBuffer</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                <p>The default options for all sounds.<br>       if a property is defined, it will use the local property instead.</p></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Type</th>
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+        <tr>
+            
+            <td class="type">
+            
+                        <a href="PIXI.sound.Sound.html">PIXI.sound.Sound</a>
+                        
+                    
+            </td>
+            <td class="description last">Instance to the Sound object.</td>
+        </tr>
+    
+    </tbody>
+</table>
+
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="add">
+            
+            add<span class="signature">(alias, sound)</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{<a href="PIXI.sound.Sound.html">PIXI.sound.Sound</a>}</span>
+        </h4>
+    
+        
+        <div class="tag-source">
+            SoundLibrary.js, line 36
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        <p>Register an existing sound with the library cache.</p>
+    </div>
+    
+
+    
+    
+    
+    
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>alias</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                <p>The sound alias reference.</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>sound</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type"><a href="PIXI.sound.Sound.html">PIXI.sound.Sound</a></span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                <p>Sound reference to use.</p></td>
         </tr>
 	
 	
@@ -4369,7 +4371,7 @@
         
 
         <footer>
-            Documentation generated by <a target="_blank" href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.3</a> on Wed Feb 15 2017 18:36:17 GMT-0500 (EST)
+            Documentation generated by <a target="_blank" href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.3</a> on Fri Feb 17 2017 15:34:26 GMT-0500 (EST)
         </footer>
     </div>
 </div>
