@@ -2,7 +2,13 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Class: Filter</title>
+    <title>PIXI.sound API Documentation</title>
+    
+    <meta name="description" content="Documentation for PIXI.sound library" />
+    
+        <meta name="keywords" content="docs, documentation, pixi, pixijs, webaudio, html5, audio, javascript, jsdoc" />
+        <meta name="keyword" content="docs, documentation, pixi, pixijs, webaudio, html5, audio, javascript, jsdoc" />
+    
     
     
     <script src="scripts/prettify/prettify.js"></script>
@@ -17,7 +23,7 @@
     
     
     <script>
-    var config = {"monospaceLinks":false,"cleverLinks":false,"default":{"outputSourceFiles":false},"applicationName":"PIXI.sound","footer":"Made with ♥ by Matt Karl (github.com/bigtimebuddy)","copyright":"PIXI Copyright &copy; 2017 Matt Karl.","linenums":false};
+    var config = {"monospaceLinks":false,"cleverLinks":false,"default":{"outputSourceFiles":false},"applicationName":"PIXI.sound","footer":"Made with ♥ by Matt Karl (github.com/bigtimebuddy)","copyright":"PIXI Copyright &copy; 2017 Matt Karl.","linenums":false,"meta":{"title":"PIXI.sound API Documentation","description":"Documentation for PIXI.sound library","keyword":"docs, documentation, pixi, pixijs, webaudio, html5, audio, javascript, jsdoc"}};
     </script>
     
 
@@ -47,6 +53,9 @@
             <ul class="typedefs itemMembers">
             
             </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
             <ul class="methods itemMembers">
             
             </ul>
@@ -70,11 +79,16 @@
             
                 <li data-name="PIXI.sound#filtersAll"><a href="PIXI.sound.html#filtersAll">filtersAll</a></li>
             
-                <li data-name="PIXI.sound#SoundUtils"><a href="PIXI.sound.html#SoundUtils">SoundUtils</a></li>
+                <li data-name="PIXI.sound#speedAll"><a href="PIXI.sound.html#speedAll">speedAll</a></li>
             
                 <li data-name="PIXI.sound#supported"><a href="PIXI.sound.html#supported">supported</a></li>
             
+                <li data-name="PIXI.sound#useLegacy"><a href="PIXI.sound.html#useLegacy">useLegacy</a></li>
+            
                 <li data-name="PIXI.sound#volumeAll"><a href="PIXI.sound.html#volumeAll">volumeAll</a></li>
+            
+            </ul>
+            <ul class="typedefs itemMembers">
             
             </ul>
             <ul class="typedefs itemMembers">
@@ -90,17 +104,15 @@
             
                 <li data-name="PIXI.sound#add"><a href="PIXI.sound.html#add">add</a></li>
             
-                <li data-name="PIXI.sound#addMap"><a href="PIXI.sound.html#addMap">addMap</a></li>
-            
                 <li data-name="PIXI.sound#duration"><a href="PIXI.sound.html#duration">duration</a></li>
             
                 <li data-name="PIXI.sound#exists"><a href="PIXI.sound.html#exists">exists</a></li>
             
                 <li data-name="PIXI.sound#find"><a href="PIXI.sound.html#find">find</a></li>
             
-                <li data-name="PIXI.sound#muteAll"><a href="PIXI.sound.html#muteAll">muteAll</a></li>
+                <li data-name="PIXI.sound#global"><a href="PIXI.sound.html#global">global</a></li>
             
-                <li data-name="PIXI.sound#panning"><a href="PIXI.sound.html#panning">panning</a></li>
+                <li data-name="PIXI.sound#muteAll"><a href="PIXI.sound.html#muteAll">muteAll</a></li>
             
                 <li data-name="PIXI.sound#pause"><a href="PIXI.sound.html#pause">pause</a></li>
             
@@ -118,11 +130,15 @@
             
                 <li data-name="PIXI.sound#resumeAll"><a href="PIXI.sound.html#resumeAll">resumeAll</a></li>
             
-                <li data-name="PIXI.sound#sound"><a href="PIXI.sound.html#sound">sound</a></li>
+                <li data-name="PIXI.sound#speed"><a href="PIXI.sound.html#speed">speed</a></li>
             
                 <li data-name="PIXI.sound#stop"><a href="PIXI.sound.html#stop">stop</a></li>
             
                 <li data-name="PIXI.sound#stopAll"><a href="PIXI.sound.html#stopAll">stopAll</a></li>
+            
+                <li data-name="PIXI.sound#toggleMuteAll"><a href="PIXI.sound.html#toggleMuteAll">toggleMuteAll</a></li>
+            
+                <li data-name="PIXI.sound#togglePauseAll"><a href="PIXI.sound.html#togglePauseAll">togglePauseAll</a></li>
             
                 <li data-name="PIXI.sound#unmuteAll"><a href="PIXI.sound.html#unmuteAll">unmuteAll</a></li>
             
@@ -147,6 +163,9 @@
             <ul class="typedefs itemMembers">
             
             </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
             <ul class="methods itemMembers">
             
             </ul>
@@ -164,6 +183,15 @@
             </span>
             <ul class="members itemMembers">
             
+            <span class="subtitle">Members</span>
+            
+                <li data-name="PIXI.sound.utils.extensions"><a href="PIXI.sound.utils.html#.extensions">extensions</a></li>
+            
+                <li data-name="PIXI.sound.utils.supported"><a href="PIXI.sound.utils.html#.supported">supported</a></li>
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
             </ul>
             <ul class="typedefs itemMembers">
             
@@ -176,36 +204,9 @@
             
                 <li data-name="PIXI.sound.utils.render"><a href="PIXI.sound.utils.html#.render">render</a></li>
             
+                <li data-name="PIXI.sound.utils.resolveUrl"><a href="PIXI.sound.utils.html#.resolveUrl">resolveUrl</a></li>
+            
                 <li data-name="PIXI.sound.utils.sineTone"><a href="PIXI.sound.utils.html#.sineTone">sineTone</a></li>
-            
-            </ul>
-            <ul class="events itemMembers">
-            
-            </ul>
-        </li>
-    
-        <li class="item" data-name="PIXI.sound.Filterable">
-            <span class="title">
-                <a href="PIXI.sound.Filterable.html">PIXI.sound.Filterable</a>
-                
-            </span>
-            <ul class="members itemMembers">
-            
-            <span class="subtitle">Members</span>
-            
-                <li data-name="PIXI.sound.Filterable#destination"><a href="PIXI.sound.Filterable.html#destination">destination</a></li>
-            
-                <li data-name="PIXI.sound.Filterable#filters"><a href="PIXI.sound.Filterable.html#filters">filters</a></li>
-            
-            </ul>
-            <ul class="typedefs itemMembers">
-            
-            </ul>
-            <ul class="methods itemMembers">
-            
-            <span class="subtitle">Methods</span>
-            
-                <li data-name="PIXI.sound.Filterable#destroy"><a href="PIXI.sound.Filterable.html#destroy">destroy</a></li>
             
             </ul>
             <ul class="events itemMembers">
@@ -219,6 +220,9 @@
                 
             </span>
             <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
             
             </ul>
             <ul class="typedefs itemMembers">
@@ -261,6 +265,29 @@
             
                 <li data-name="PIXI.sound.filters.EqualizerFilter.F500"><a href="PIXI.sound.filters.EqualizerFilter.html#.F500">F500</a></li>
             
+                <li data-name="PIXI.sound.filters.EqualizerFilter#f1k"><a href="PIXI.sound.filters.EqualizerFilter.html#f1k">f1k</a></li>
+            
+                <li data-name="PIXI.sound.filters.EqualizerFilter#f2k"><a href="PIXI.sound.filters.EqualizerFilter.html#f2k">f2k</a></li>
+            
+                <li data-name="PIXI.sound.filters.EqualizerFilter#f4k"><a href="PIXI.sound.filters.EqualizerFilter.html#f4k">f4k</a></li>
+            
+                <li data-name="PIXI.sound.filters.EqualizerFilter#f8k"><a href="PIXI.sound.filters.EqualizerFilter.html#f8k">f8k</a></li>
+            
+                <li data-name="PIXI.sound.filters.EqualizerFilter#f16k"><a href="PIXI.sound.filters.EqualizerFilter.html#f16k">f16k</a></li>
+            
+                <li data-name="PIXI.sound.filters.EqualizerFilter#f32"><a href="PIXI.sound.filters.EqualizerFilter.html#f32">f32</a></li>
+            
+                <li data-name="PIXI.sound.filters.EqualizerFilter#f64"><a href="PIXI.sound.filters.EqualizerFilter.html#f64">f64</a></li>
+            
+                <li data-name="PIXI.sound.filters.EqualizerFilter#f125"><a href="PIXI.sound.filters.EqualizerFilter.html#f125">f125</a></li>
+            
+                <li data-name="PIXI.sound.filters.EqualizerFilter#f250"><a href="PIXI.sound.filters.EqualizerFilter.html#f250">f250</a></li>
+            
+                <li data-name="PIXI.sound.filters.EqualizerFilter#f500"><a href="PIXI.sound.filters.EqualizerFilter.html#f500">f500</a></li>
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
             </ul>
             <ul class="typedefs itemMembers">
             
@@ -268,6 +295,8 @@
             <ul class="methods itemMembers">
             
             <span class="subtitle">Methods</span>
+            
+                <li data-name="PIXI.sound.filters.EqualizerFilter#getGain"><a href="PIXI.sound.filters.EqualizerFilter.html#getGain">getGain</a></li>
             
                 <li data-name="PIXI.sound.filters.EqualizerFilter#reset"><a href="PIXI.sound.filters.EqualizerFilter.html#reset">reset</a></li>
             
@@ -296,6 +325,9 @@
             <ul class="typedefs itemMembers">
             
             </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
             <ul class="methods itemMembers">
             
             <span class="subtitle">Methods</span>
@@ -305,6 +337,28 @@
                 <li data-name="PIXI.sound.filters.Filter#destroy"><a href="PIXI.sound.filters.Filter.html#destroy">destroy</a></li>
             
                 <li data-name="PIXI.sound.filters.Filter#disconnect"><a href="PIXI.sound.filters.Filter.html#disconnect">disconnect</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="PIXI.sound.filters.MonoFilter">
+            <span class="title">
+                <a href="PIXI.sound.filters.MonoFilter.html">PIXI.sound.filters.MonoFilter</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
             
             </ul>
             <ul class="events itemMembers">
@@ -326,6 +380,9 @@
                 <li data-name="PIXI.sound.filters.ReverbFilter#decay"><a href="PIXI.sound.filters.ReverbFilter.html#decay">decay</a></li>
             
                 <li data-name="PIXI.sound.filters.ReverbFilter#reverse"><a href="PIXI.sound.filters.ReverbFilter.html#reverse">reverse</a></li>
+            
+            </ul>
+            <ul class="typedefs itemMembers">
             
             </ul>
             <ul class="typedefs itemMembers">
@@ -354,10 +411,135 @@
             <ul class="typedefs itemMembers">
             
             </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
             <ul class="methods itemMembers">
             
             </ul>
             <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="PIXI.sound.filters.TelephoneFilter">
+            <span class="title">
+                <a href="PIXI.sound.filters.TelephoneFilter.html">PIXI.sound.filters.TelephoneFilter</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="PIXI.sound.IMediaContext">
+            <span class="title">
+                <a href="PIXI.sound.IMediaContext.html">PIXI.sound.IMediaContext</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            <span class="subtitle">Members</span>
+            
+                <li data-name="PIXI.sound.IMediaContext#audioContext"><a href="PIXI.sound.IMediaContext.html#audioContext">audioContext</a></li>
+            
+                <li data-name="PIXI.sound.IMediaContext#filters"><a href="PIXI.sound.IMediaContext.html#filters">filters</a></li>
+            
+                <li data-name="PIXI.sound.IMediaContext#muted"><a href="PIXI.sound.IMediaContext.html#muted">muted</a></li>
+            
+                <li data-name="PIXI.sound.IMediaContext#paused"><a href="PIXI.sound.IMediaContext.html#paused">paused</a></li>
+            
+                <li data-name="PIXI.sound.IMediaContext#speed"><a href="PIXI.sound.IMediaContext.html#speed">speed</a></li>
+            
+                <li data-name="PIXI.sound.IMediaContext#volume"><a href="PIXI.sound.IMediaContext.html#volume">volume</a></li>
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="PIXI.sound.IMediaContext#destroy"><a href="PIXI.sound.IMediaContext.html#destroy">destroy</a></li>
+            
+                <li data-name="PIXI.sound.IMediaContext#toggleMute"><a href="PIXI.sound.IMediaContext.html#toggleMute">toggleMute</a></li>
+            
+                <li data-name="PIXI.sound.IMediaContext#togglePause"><a href="PIXI.sound.IMediaContext.html#togglePause">togglePause</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="PIXI.sound.IMediaInstance">
+            <span class="title">
+                <a href="PIXI.sound.IMediaInstance.html">PIXI.sound.IMediaInstance</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            <span class="subtitle">Members</span>
+            
+                <li data-name="PIXI.sound.IMediaInstance#id"><a href="PIXI.sound.IMediaInstance.html#id">id</a></li>
+            
+                <li data-name="PIXI.sound.IMediaInstance#loop"><a href="PIXI.sound.IMediaInstance.html#loop">loop</a></li>
+            
+                <li data-name="PIXI.sound.IMediaInstance#muted"><a href="PIXI.sound.IMediaInstance.html#muted">muted</a></li>
+            
+                <li data-name="PIXI.sound.IMediaInstance#paused"><a href="PIXI.sound.IMediaInstance.html#paused">paused</a></li>
+            
+                <li data-name="PIXI.sound.IMediaInstance#progress"><a href="PIXI.sound.IMediaInstance.html#progress">progress</a></li>
+            
+                <li data-name="PIXI.sound.IMediaInstance#speed"><a href="PIXI.sound.IMediaInstance.html#speed">speed</a></li>
+            
+                <li data-name="PIXI.sound.IMediaInstance#volume"><a href="PIXI.sound.IMediaInstance.html#volume">volume</a></li>
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="PIXI.sound.IMediaInstance#stop"><a href="PIXI.sound.IMediaInstance.html#stop">stop</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            <span class="subtitle">Events</span>
+            
+                <li data-name="PIXI.sound.IMediaInstance#event:end"><a href="PIXI.sound.IMediaInstance.html#event:end">end</a></li>
+            
+                <li data-name="PIXI.sound.IMediaInstance#event:pause"><a href="PIXI.sound.IMediaInstance.html#event:pause">pause</a></li>
+            
+                <li data-name="PIXI.sound.IMediaInstance#event:paused"><a href="PIXI.sound.IMediaInstance.html#event:paused">paused</a></li>
+            
+                <li data-name="PIXI.sound.IMediaInstance#event:progress"><a href="PIXI.sound.IMediaInstance.html#event:progress">progress</a></li>
+            
+                <li data-name="PIXI.sound.IMediaInstance#event:resumed"><a href="PIXI.sound.IMediaInstance.html#event:resumed">resumed</a></li>
+            
+                <li data-name="PIXI.sound.IMediaInstance#event:start"><a href="PIXI.sound.IMediaInstance.html#event:start">start</a></li>
             
             </ul>
         </li>
@@ -371,11 +553,7 @@
             
             <span class="subtitle">Members</span>
             
-                <li data-name="PIXI.sound.Sound#block"><a href="PIXI.sound.Sound.html#block">block</a></li>
-            
-                <li data-name="PIXI.sound.Sound#buffer"><a href="PIXI.sound.Sound.html#buffer">buffer</a></li>
-            
-                <li data-name="PIXI.sound.Sound#complete"><a href="PIXI.sound.Sound.html#complete">complete</a></li>
+                <li data-name="PIXI.sound.Sound#autoPlay"><a href="PIXI.sound.Sound.html#autoPlay">autoPlay</a></li>
             
                 <li data-name="PIXI.sound.Sound#context"><a href="PIXI.sound.Sound.html#context">context</a></li>
             
@@ -391,9 +569,13 @@
             
                 <li data-name="PIXI.sound.Sound#isPlaying"><a href="PIXI.sound.Sound.html#isPlaying">isPlaying</a></li>
             
-                <li data-name="PIXI.sound.Sound#loaded"><a href="PIXI.sound.Sound.html#loaded">loaded</a></li>
-            
                 <li data-name="PIXI.sound.Sound#loop"><a href="PIXI.sound.Sound.html#loop">loop</a></li>
+            
+                <li data-name="PIXI.sound.Sound#muted"><a href="PIXI.sound.Sound.html#muted">muted</a></li>
+            
+                <li data-name="PIXI.sound.Sound#options"><a href="PIXI.sound.Sound.html#options">options</a></li>
+            
+                <li data-name="PIXI.sound.Sound#paused"><a href="PIXI.sound.Sound.html#paused">paused</a></li>
             
                 <li data-name="PIXI.sound.Sound#preload"><a href="PIXI.sound.Sound.html#preload">preload</a></li>
             
@@ -403,11 +585,7 @@
             
                 <li data-name="PIXI.sound.Sound#sprites"><a href="PIXI.sound.Sound.html#sprites">sprites</a></li>
             
-                <li data-name="PIXI.sound.Sound#src"><a href="PIXI.sound.Sound.html#src">src</a></li>
-            
-                <li data-name="PIXI.sound.Sound#srcBuffer"><a href="PIXI.sound.Sound.html#srcBuffer">srcBuffer</a></li>
-            
-                <li data-name="PIXI.sound.Sound#useXHR"><a href="PIXI.sound.Sound.html#useXHR">useXHR</a></li>
+                <li data-name="PIXI.sound.Sound#url"><a href="PIXI.sound.Sound.html#url">url</a></li>
             
                 <li data-name="PIXI.sound.Sound#volume"><a href="PIXI.sound.Sound.html#volume">volume</a></li>
             
@@ -421,6 +599,9 @@
                 <li data-name="PIXI.sound.Sound~loadedCallback"><a href="PIXI.sound.Sound.html#~loadedCallback">loadedCallback</a></li>
             
             </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
             <ul class="methods itemMembers">
             
             <span class="subtitle">Methods</span>
@@ -430,6 +611,8 @@
                 <li data-name="PIXI.sound.Sound#addSprites"><a href="PIXI.sound.Sound.html#addSprites">addSprites</a></li>
             
                 <li data-name="PIXI.sound.Sound#addSprites"><a href="PIXI.sound.Sound.html#addSprites">addSprites</a></li>
+            
+                <li data-name="PIXI.sound.Sound#destroy"><a href="PIXI.sound.Sound.html#destroy">destroy</a></li>
             
                 <li data-name="PIXI.sound.Sound#pause"><a href="PIXI.sound.Sound.html#pause">pause</a></li>
             
@@ -447,110 +630,6 @@
             
             </ul>
             <ul class="events itemMembers">
-            
-            </ul>
-        </li>
-    
-        <li class="item" data-name="PIXI.sound.SoundContext">
-            <span class="title">
-                <a href="PIXI.sound.SoundContext.html">PIXI.sound.SoundContext</a>
-                
-            </span>
-            <ul class="members itemMembers">
-            
-            <span class="subtitle">Members</span>
-            
-                <li data-name="PIXI.sound.SoundContext.AudioContext"><a href="PIXI.sound.SoundContext.html#.AudioContext">AudioContext</a></li>
-            
-                <li data-name="PIXI.sound.SoundContext.OfflineAudioContext"><a href="PIXI.sound.SoundContext.html#.OfflineAudioContext">OfflineAudioContext</a></li>
-            
-                <li data-name="PIXI.sound.SoundContext#analyser"><a href="PIXI.sound.SoundContext.html#analyser">analyser</a></li>
-            
-                <li data-name="PIXI.sound.SoundContext#audioContext"><a href="PIXI.sound.SoundContext.html#audioContext">audioContext</a></li>
-            
-                <li data-name="PIXI.sound.SoundContext#compressor"><a href="PIXI.sound.SoundContext.html#compressor">compressor</a></li>
-            
-                <li data-name="PIXI.sound.SoundContext#destination"><a href="PIXI.sound.SoundContext.html#destination">destination</a></li>
-            
-                <li data-name="PIXI.sound.SoundContext#filters"><a href="PIXI.sound.SoundContext.html#filters">filters</a></li>
-            
-                <li data-name="PIXI.sound.SoundContext#gain"><a href="PIXI.sound.SoundContext.html#gain">gain</a></li>
-            
-                <li data-name="PIXI.sound.SoundContext#muted"><a href="PIXI.sound.SoundContext.html#muted">muted</a></li>
-            
-                <li data-name="PIXI.sound.SoundContext#offlineContext"><a href="PIXI.sound.SoundContext.html#offlineContext">offlineContext</a></li>
-            
-                <li data-name="PIXI.sound.SoundContext#paused"><a href="PIXI.sound.SoundContext.html#paused">paused</a></li>
-            
-                <li data-name="PIXI.sound.SoundContext#volume"><a href="PIXI.sound.SoundContext.html#volume">volume</a></li>
-            
-            </ul>
-            <ul class="typedefs itemMembers">
-            
-            </ul>
-            <ul class="methods itemMembers">
-            
-            <span class="subtitle">Methods</span>
-            
-                <li data-name="PIXI.sound.SoundContext#destroy"><a href="PIXI.sound.SoundContext.html#destroy">destroy</a></li>
-            
-                <li data-name="PIXI.sound.SoundContext#playEmptySound"><a href="PIXI.sound.SoundContext.html#playEmptySound">playEmptySound</a></li>
-            
-                <li data-name="PIXI.sound.SoundContext#toggleMute"><a href="PIXI.sound.SoundContext.html#toggleMute">toggleMute</a></li>
-            
-            </ul>
-            <ul class="events itemMembers">
-            
-            </ul>
-        </li>
-    
-        <li class="item" data-name="PIXI.sound.SoundInstance">
-            <span class="title">
-                <a href="PIXI.sound.SoundInstance.html">PIXI.sound.SoundInstance</a>
-                
-            </span>
-            <ul class="members itemMembers">
-            
-            <span class="subtitle">Members</span>
-            
-                <li data-name="PIXI.sound.SoundInstance#id"><a href="PIXI.sound.SoundInstance.html#id">id</a></li>
-            
-                <li data-name="PIXI.sound.SoundInstance#paused"><a href="PIXI.sound.SoundInstance.html#paused">paused</a></li>
-            
-                <li data-name="PIXI.sound.SoundInstance#progress"><a href="PIXI.sound.SoundInstance.html#progress">progress</a></li>
-            
-            </ul>
-            <ul class="typedefs itemMembers">
-            
-            </ul>
-            <ul class="methods itemMembers">
-            
-            <span class="subtitle">Methods</span>
-            
-                <li data-name="PIXI.sound.SoundInstance#destroy"><a href="PIXI.sound.SoundInstance.html#destroy">destroy</a></li>
-            
-                <li data-name="PIXI.sound.SoundInstance#play"><a href="PIXI.sound.SoundInstance.html#play">play</a></li>
-            
-                <li data-name="PIXI.sound.SoundInstance#stop"><a href="PIXI.sound.SoundInstance.html#stop">stop</a></li>
-            
-            </ul>
-            <ul class="events itemMembers">
-            
-            <span class="subtitle">Events</span>
-            
-                <li data-name="PIXI.sound.SoundInstance#event:end"><a href="PIXI.sound.SoundInstance.html#event:end">end</a></li>
-            
-                <li data-name="PIXI.sound.SoundInstance#event:pause"><a href="PIXI.sound.SoundInstance.html#event:pause">pause</a></li>
-            
-                <li data-name="PIXI.sound.SoundInstance#event:paused"><a href="PIXI.sound.SoundInstance.html#event:paused">paused</a></li>
-            
-                <li data-name="PIXI.sound.SoundInstance#event:progress"><a href="PIXI.sound.SoundInstance.html#event:progress">progress</a></li>
-            
-                <li data-name="PIXI.sound.SoundInstance#event:resumed"><a href="PIXI.sound.SoundInstance.html#event:resumed">resumed</a></li>
-            
-                <li data-name="PIXI.sound.SoundInstance#event:start"><a href="PIXI.sound.SoundInstance.html#event:start">start</a></li>
-            
-                <li data-name="PIXI.sound.SoundInstance#event:stop"><a href="PIXI.sound.SoundInstance.html#event:stop">stop</a></li>
             
             </ul>
         </li>
@@ -573,6 +652,9 @@
                 <li data-name="PIXI.sound.SoundSprite#speed"><a href="PIXI.sound.SoundSprite.html#speed">speed</a></li>
             
                 <li data-name="PIXI.sound.SoundSprite#start"><a href="PIXI.sound.SoundSprite.html#start">start</a></li>
+            
+            </ul>
+            <ul class="typedefs itemMembers">
             
             </ul>
             <ul class="typedefs itemMembers">
@@ -719,7 +801,8 @@
                         
                     
                 
-                <p>Optional output node, defaults to destination node. This is useful<br>       when creating filters which contains multiple AudioNode elements chained together.</p></td>
+                <p>Optional output node, defaults to destination node. This is useful
+       when creating filters which contains multiple AudioNode elements chained together.</p></td>
         </tr>
 	
 	
@@ -1142,6 +1225,8 @@
     
     
     
+
+    
 </article>
 
 </section>  
@@ -1153,7 +1238,7 @@
         
 
         <footer>
-            Documentation generated by <a target="_blank" href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.3</a> on Tue Jun 20 2017 10:43:06 GMT-0400 (EDT)
+            Documentation generated by <a target="_blank" href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.3</a> on Fri Jul 21 2017 14:48:57 GMT-0400 (EDT)
         </footer>
     </div>
 </div>

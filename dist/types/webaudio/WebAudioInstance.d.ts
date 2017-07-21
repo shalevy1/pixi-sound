@@ -1,0 +1,42 @@
+/// <reference types="pixi.js" />
+import WebAudioMedia from "./WebAudioMedia";
+import { IMediaInstance } from "../interfaces/IMediaInstance";
+import { PlayOptions } from "../Sound";
+export default class WebAudioInstance extends PIXI.utils.EventEmitter implements IMediaInstance {
+    id: number;
+    private _media;
+    private _paused;
+    private _muted;
+    private _pausedReal;
+    private _volume;
+    private _lastUpdate;
+    private _elapsed;
+    private _speed;
+    private _end;
+    private _loop;
+    private _gain;
+    private _duration;
+    private _progress;
+    private _updateListener;
+    private _source;
+    constructor(media: WebAudioMedia);
+    stop(): void;
+    speed: number;
+    volume: number;
+    muted: boolean;
+    loop: boolean;
+    refresh(): void;
+    refreshPaused(): void;
+    play(options: PlayOptions): void;
+    private _toSec(time?);
+    private _enabled;
+    readonly progress: number;
+    paused: boolean;
+    destroy(): void;
+    toString(): string;
+    private _now();
+    private _update(force?);
+    init(media: WebAudioMedia): void;
+    private _internalStop();
+    private _onComplete();
+}
