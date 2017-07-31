@@ -8,7 +8,6 @@ import { LoadedCallback } from "../Sound";
 export default class WebAudioMedia implements IMedia {
     parent: Sound;
     source: ArrayBuffer;
-    useXHR: boolean;
     private _nodes;
     private _source;
     init(parent: Sound): void;
@@ -22,6 +21,5 @@ export default class WebAudioMedia implements IMedia {
     readonly nodes: WebAudioNodes;
     load(callback?: LoadedCallback): void;
     private _loadUrl(callback?);
-    private _loadPath(callback?);
     private _decode(arrayBuffer, callback?);
 }

@@ -16,7 +16,6 @@ export interface Options {
     loop?: boolean;
     url?: string;
     source?: ArrayBuffer | HTMLAudioElement;
-    useXHR?: boolean;
     sprites?: {
         [id: string]: SoundSpriteData;
     };

@@ -1,7 +1,7 @@
 /*!
- * pixi-sound - v2.0.0-alpha
+ * pixi-sound - v2.0.0-alpha.2
  * https://github.com/pixijs/pixi-sound
- * Compiled Fri, 21 Jul 2017 18:46:20 UTC
+ * Compiled Mon, 31 Jul 2017 18:33:21 UTC
  *
  * pixi-sound is licensed under the MIT license.
  * http://www.opensource.org/licenses/mit-license
@@ -1104,7 +1104,6 @@ var WebAudioMedia = (function () {
         this._nodes = new WebAudioNodes(this.context);
         this._source = this._nodes.bufferSource;
         this.source = parent.options.source;
-        this.useXHR = parent.options.useXHR;
     };
     WebAudioMedia.prototype.destroy = function () {
         this.parent = null;
@@ -1167,7 +1166,7 @@ var WebAudioMedia = (function () {
     });
     WebAudioMedia.prototype.load = function (callback) {
         if (this.parent.url) {
-            this.useXHR ? this._loadUrl(callback) : this._loadPath(callback);
+            this._loadUrl(callback);
         }
         else if (this.source) {
             this._decode(this.source, callback);
@@ -1190,27 +1189,6 @@ var WebAudioMedia = (function () {
             _this._decode(request.response, callback);
         };
         request.send();
-    };
-    WebAudioMedia.prototype._loadPath = function (callback) {
-        var _this = this;
-        var fs = require("fs");
-        var url = this.parent.url;
-        fs.readFile(url, function (err, data) {
-            if (err) {
-                console.error(err);
-                if (callback) {
-                    callback(new Error("File not found " + _this.parent.url));
-                }
-                return;
-            }
-            var arrayBuffer = new ArrayBuffer(data.length);
-            var view = new Uint8Array(arrayBuffer);
-            for (var i = 0; i < data.length; ++i) {
-                view[i] = data[i];
-            }
-            _this.source = arrayBuffer;
-            _this._decode(arrayBuffer, callback);
-        });
     };
     WebAudioMedia.prototype._decode = function (arrayBuffer, callback) {
         var _this = this;
@@ -1281,7 +1259,6 @@ var Sound = (function () {
             complete: null,
             loaded: null,
             loop: false,
-            useXHR: true,
         }, options);
         if (options.url) {
             options.url = SoundUtils.resolveUrl(options.url);
