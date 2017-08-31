@@ -116,13 +116,15 @@
             
                 <li data-name="PIXI.sound#add"><a href="PIXI.sound.html#add">add</a></li>
             
+                <li data-name="PIXI.sound#close"><a href="PIXI.sound.html#close">close</a></li>
+            
                 <li data-name="PIXI.sound#duration"><a href="PIXI.sound.html#duration">duration</a></li>
             
                 <li data-name="PIXI.sound#exists"><a href="PIXI.sound.html#exists">exists</a></li>
             
                 <li data-name="PIXI.sound#find"><a href="PIXI.sound.html#find">find</a></li>
             
-                <li data-name="PIXI.sound#global"><a href="PIXI.sound.html#global">global</a></li>
+                <li data-name="PIXI.sound#init"><a href="PIXI.sound.html#init">init</a></li>
             
                 <li data-name="PIXI.sound#muteAll"><a href="PIXI.sound.html#muteAll">muteAll</a></li>
             
@@ -2209,152 +2211,6 @@ are created. Properties such a <code>volume</code>, <code>pause</code>, <code>mu
     <div class="nameContainer">
         <h4 class="name" id="addSprites">
             
-            addSprites<span class="signature">(data)</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{Object}</span>
-        </h4>
-    
-        
-        <div class="tag-source">
-            Sound.js, line 221
-        </div>
-        
-    </div>
-
-    
-</dt>
-<dd>
-    
-    
-    <div class="description">
-        <p>Convenience method to add more than one sprite add a time.</p>
-    </div>
-    
-
-    
-    
-    
-    
-    
-        
-
-<table class="params">
-    <thead>
-	<tr>
-		
-		<th>Name</th>
-		
-		
-		<th>Type</th>
-		
-		
-		
-		<th class="last">Description</th>
-	</tr>
-	</thead>
-	
-	<tbody>
-	
-	
-        <tr>
-            
-                <td class="name"><code>data</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">Object</span>
-
-
-            
-            </td>
-            
-            
-            
-            <td class="description last">
-                
-                <p>Map of sounds to add where the key is the alias,
-       and the data are configuration options, see {@PIXI.sound.Sound#addSprite} for info on data.</p></td>
-        </tr>
-	
-	
-	</tbody>
-</table>
-    
-    
-    
-<dl class="details">
-    
-        
-    
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-</dl>
-
-    
-    
-
-    
-
-    
-    
-    
-    
-    
-    <h5>Returns:</h5>
-    
-
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Type</th>
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-    <tbody>
-    
-        <tr>
-            
-            <td class="type">
-            
-                        Object
-                        
-                    
-            </td>
-            <td class="description last">The map of sound sprites added.</td>
-        </tr>
-    
-    </tbody>
-</table>
-
-    
-    
-    
-</dd>
-
-        
-            
-<dt>
-    <div class="nameContainer">
-        <h4 class="name" id="addSprites">
-            
             addSprites<span class="signature">(alias, data)</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{<a href="PIXI.sound.SoundSprite.html">PIXI.sound.SoundSprite</a>}</span>
         </h4>
     
@@ -2616,6 +2472,152 @@ Similar to an image spritesheet.</p>
                     
             </td>
             <td class="description last">Sound sprite result.</td>
+        </tr>
+    
+    </tbody>
+</table>
+
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="addSprites">
+            
+            addSprites<span class="signature">(data)</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{Object}</span>
+        </h4>
+    
+        
+        <div class="tag-source">
+            Sound.js, line 221
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        <p>Convenience method to add more than one sprite add a time.</p>
+    </div>
+    
+
+    
+    
+    
+    
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>data</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                <p>Map of sounds to add where the key is the alias,
+       and the data are configuration options, see {@PIXI.sound.Sound#addSprite} for info on data.</p></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Type</th>
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+        <tr>
+            
+            <td class="type">
+            
+                        Object
+                        
+                    
+            </td>
+            <td class="description last">The map of sound sprites added.</td>
         </tr>
     
     </tbody>
@@ -4351,7 +4353,7 @@ Similar to an image spritesheet.</p>
         
 
         <footer>
-            Documentation generated by <a target="_blank" href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.4</a> on Mon Aug 14 2017 17:17:26 GMT-0400 (EDT)
+            Documentation generated by <a target="_blank" href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.4</a> on Thu Aug 31 2017 13:24:35 GMT-0400 (EDT)
         </footer>
     </div>
 </div>
