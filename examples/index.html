@@ -225,8 +225,10 @@ console.log('Sound: ', PIXI.sound.find('boing'));</code></pre>
         const playhead = new PIXI.Graphics()
             .beginFill(0xff0000)
             .drawRect(0, 0, 1, waveform.renderer.height);
-
-        waveform.stage.addChild(PIXI.Sprite.from(baseTexture), playhead);
+        const sprite = new PIXI.Sprite(
+            new PIXI.Texture(baseTexture)
+        );
+        waveform.stage.addChild(sprite, playhead);
         sound.play().on('progress', function(value) {
             playhead.x = baseTexture.width * value;
         });
